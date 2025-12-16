@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.bg-daraz-primary { background-color: #F85606; } 
+.text-daraz-primary { color: #F85606; }
+
+.bg-daraz-accent { background-color: #C2FFFA; } 
+.text-daraz-accent { color: #C2FFFA; }
+
+.bg-daraz-dark { background-color: #3F0686; } 
+.text-daraz-dark { color: #3F0686; }
