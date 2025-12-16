@@ -1,0 +1,61 @@
+import React, { useState } from "react";
+import { BiUser } from "react-icons/bi";
+import { FaCartShopping } from "react-icons/fa6";
+import { HiMenu, HiX } from "react-icons/hi";
+
+
+const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  return (
+    <>
+      <nav className="pt-3 pb-2 md:pt-5 px-5 flex justify-between items-center  text-zinc-100 md:px-15 bg-daraz-primary">
+        <h2 className="font-devina   font-extrabold text-2xl md:text-3xl  leading-4">
+          Roka <br />
+          <span className="text-lg">Store</span>
+        </h2>
+        <ul className="flex hidden md:flex gap-15  cursor-pointer md:text-lg  font-semibold">
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            Home
+          </li>
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            Product
+          </li>
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            About
+          </li>
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            Contact
+          </li>
+        </ul>
+        <div className="flex gap-5 text-2xl items-center">
+          <FaCartShopping className="hidden md:block" />
+          <span>
+            <BiUser className="hidden md:block" />
+          </span>
+          <button className="md:hidden" onClick={()=> setMenuOpen(!menuOpen)}>{menuOpen ? <HiX/>: <HiMenu className="text-4xl" />}</button>
+        </div>
+       
+      </nav>
+      {menuOpen && (
+        <ul>
+             <ul className="flex px-5 absolute w-full  flex-col gap-4 bg-daraz-primary text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            Home
+          </li>
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            Product
+          </li>
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            About
+          </li>
+          <li className="hover:text-zinc-300 transition-all duration-300">
+            Contact
+          </li>
+        </ul>
+        </ul>
+       )}
+    </>
+  );
+};
+
+export default Header;
