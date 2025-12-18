@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { BiUser } from "react-icons/bi";
 import { FaCartShopping } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const handleClick = () => setMenuOpen(false)
   return (
     <>
       <nav className="pt-3 pb-2 md:pt-5 px-5 flex justify-between items-center  text-zinc-100 md:px-15 bg-daraz-primary">
@@ -37,22 +39,22 @@ const Header = () => {
        
       </nav>
       {menuOpen && (
-        <ul>
-             <ul className="flex px-5 absolute w-full  flex-col gap-4 bg-daraz-primary text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
-          <li className="hover:text-zinc-300 transition-all duration-300">
+        
+             <ul className="flex px-5 absolute w-full z-30 flex-col gap-4 bg-daraz-primary text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
+          <NavLink to={'/'}><li onClick={handleClick} className="hover:text-zinc-300 transition-all duration-300">
             Home
-          </li>
-          <li className="hover:text-zinc-300 transition-all duration-300">
+          </li></NavLink>
+         <NavLink to={'/products'}> <li onClick={handleClick} className="hover:text-zinc-300 transition-all duration-300">
             Product
-          </li>
-          <li className="hover:text-zinc-300 transition-all duration-300">
+          </li></NavLink>
+         <NavLink to={'/about'}> <li onClick={handleClick} className="hover:text-zinc-300 transition-all duration-300">
             About
-          </li>
-          <li className="hover:text-zinc-300 transition-all duration-300">
+          </li></NavLink>
+          <NavLink to={'/contact'}><li onClick={handleClick} className="hover:text-zinc-300 transition-all duration-300">
             Contact
-          </li>
+          </li></NavLink>
         </ul>
-        </ul>
+        
        )}
     </>
   );
