@@ -15,7 +15,7 @@ const Header = () => {
           Roka <br />
           <span className="text-lg">Store</span>
         </h2>
-        <ul className="flex hidden md:flex gap-15  cursor-pointer md:text-lg  font-semibold">
+        <ul className="flex hidden md:flex gap-15  cursor-pointer md:text-xl  font-semibold">
           <li className="hover:text-zinc-300 transition-all duration-300">
             Home
           </li>
