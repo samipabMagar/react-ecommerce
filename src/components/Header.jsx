@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setMenuOpen(false)
   return (
     <>
-      <nav className="pt-3 pb-2 md:pt-5 px-5 flex justify-between items-center  text-zinc-100 md:px-15 bg-daraz-primary">
+      <nav className="pt-3 pb-2 md:pt-5 px-5 flex justify-between items-center sticky top-0 z-30   text-zinc-100 md:px-15 bg-daraz-primary">
         <h2 className="font-devina   font-extrabold text-2xl md:text-3xl  leading-4">
           Roka <br />
           <span className="text-lg">Store</span>
@@ -40,7 +40,7 @@ const Header = () => {
       </nav>
       {menuOpen && (
         
-             <ul className="flex px-5 absolute w-full z-30 flex-col gap-4 bg-daraz-primary text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
+             <ul className="flex px-5  w-full z-30 flex-col gap-4 bg-daraz-primary sticky top-15  text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
           <NavLink to={'/'}><li onClick={handleClick} className="hover:text-zinc-300 transition-all duration-300">
             Home
           </li></NavLink>

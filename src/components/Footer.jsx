@@ -5,7 +5,7 @@ import { CgMail } from 'react-icons/cg'
 const Footer = () => {
   return (
     <footer className=' bg-daraz-dark   w-full pt-3 pb-2 md:pt-5 px-5 grid  text-zinc-100 md:px-15 '>
-      <div className='flex py-10 flex-col md:flex-row space-y-4 md:justify-between'>
+      <div className='flex py-10 flex-col md:flex-row md:flex-wrap space-y-4 md:justify-between'>
          <div>
         <h2 className="font-devina   font-extrabold text-2xl md:text-3xl  leading-4">
           Roka <br />

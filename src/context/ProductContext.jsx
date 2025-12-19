@@ -17,7 +17,7 @@ const ProductProvider = ({ children }) => {
   const fetchProducts = async () => {
     
     try {
-      const response = await axios.get("https://fakestoreapi.com/product");
+      const response = await axios.get("https://fakestoreapi.com/products");
       const data = response.data;
       dispatch({type: "FETCH_SUCCESS", payload: data});
     } catch (error) {
