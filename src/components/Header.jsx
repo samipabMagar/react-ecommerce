@@ -11,10 +11,10 @@ const Header = () => {
   return (
     <>
       <nav className="pt-3 pb-2 md:pt-5 px-5 flex justify-between items-center sticky top-0 z-30   text-zinc-100 md:px-15 bg-daraz-primary">
-        <h2 className="font-devina   font-extrabold text-2xl md:text-3xl  leading-4">
+        <NavLink to={'/'}><h2 className="font-devina   font-extrabold text-2xl md:text-3xl  leading-4">
           Roka <br />
           <span className="text-lg">Store</span>
-        </h2>
+        </h2></NavLink>
         <ul className="flex hidden md:flex gap-15  cursor-pointer md:text-xl  font-semibold">
           <li className="hover:text-zinc-300 transition-all duration-300">
             Home

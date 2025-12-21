@@ -7,6 +7,7 @@ import About from './pages/About.jsx'
 import Errorpage from './pages/Errorpage.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/footer.jsx'
+import SingleProduct from './pages/SingleProduct.jsx'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/products' element={<Product/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
+        <Route path='/singleproduct/:id' element={<SingleProduct/>}></Route>
         <Route path='*' element={<Errorpage/>}></Route>
       </Routes>
       <Footer/>

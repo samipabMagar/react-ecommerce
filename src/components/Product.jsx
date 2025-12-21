@@ -1,8 +1,13 @@
 import React from 'react'
 import { formatPrice } from '../helpers/FormatPrice';
+import { NavLink } from 'react-router-dom';
 
-const Product = ({featureProducts=[]}) => {
-    console.log(featureProducts);
+const Product = ({featureProducts, isLoading}) => {
+
+    
+    if(isLoading) {
+        return <h2>Loading products.....</h2>
+    }
   return (
    <>
    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 px-6'>
@@ -15,7 +20,7 @@ const Product = ({featureProducts=[]}) => {
                         <img className='w-30 md:w-40' src={image} alt="" />
                     </div>
                     <div>
-                        <h4 className='text-blue-600 md:text-sm hover:text-blue-800  text-[10px] mb-2'>see more....</h4>
+                        <NavLink to={`/singleproduct/${id}`}><h4 className='text-blue-600 md:text-sm hover:text-blue-800  text-[10px] mb-2'>Details</h4></NavLink>
                         <h4><span className='font-semibold md:text-xl text-[15px]'>NPR.</span><span className='text-red-400 md:text-lg'>{formatPrice(price)}</span></h4>
                     <button className='py-2 md:px-6 md:text-lg hover:cursor-pointer px-4 bg-daraz-primary hover:text-zinc-300 text-white font-semibold rounded-lg mt-3'>Add to Cart</button>
                     </div>

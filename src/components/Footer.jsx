@@ -11,11 +11,11 @@ const Footer = () => {
           Roka <br />
           <span className="text-lg">Store</span>
         </h2>
-        <p className='md:text-xl text-sm'>Your trusted online shopping destination.</p>
+        <p className='md:text-lg text-sm'>Your trusted online shopping destination.</p>
        </div>
        <div>
-        <h1 className='font-semibold text-lg md:text-2xl'>Quick Links</h1>
-        <ul className='space-y-2 text-sm md:text-xl'>
+        <h1 className='font-semibold text-lg md:text-xl'>Quick Links</h1>
+        <ul className='space-y-2 text-sm md:text-lg'>
           <li>Home</li>
           <li>Shop</li>
           <li>About</li>
@@ -23,15 +23,15 @@ const Footer = () => {
         </ul>
         </div>
         <div>
-          <h1 className='font-semibold text-lg md:text-2xl'>Categories</h1>
-          <ul className='space-y-2 text-sm md:text-xl'>
+          <h1 className='font-semibold text-lg md:text-xl'>Categories</h1>
+          <ul className='space-y-2 text-sm md:text-lg'>
             <li>Electronics</li>
             <li>Men</li>
             <li>Women</li>
             <li>Jewelry</li>
           </ul>
         </div>
-        <div className='space-y-2 text-sm md:text-xl'>
+        <div className='space-y-2 text-sm md:text-lg'>
           <h3 className='flex items-center gap-2'><CgMail className='text-gray-400 text-xl '/>rokastore@gmail.com</h3>
           <h3 className='flex items-center gap-2'><BiPhone className='text-gray-400 text-xl'/> 9887898789</h3>
           <h3 className='flex items-center gap-2 '>
@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
         <div className='pb-10'>
           <hr className='text-zinc-300' />
-        <span className='mt-2 block text-center text-sm md:text-xl'>&copy; 2025 Roka Store. All rights reserved.</span>
+        <span className='mt-2 block text-center text-sm md:text-lg'>&copy; 2025 Roka Store. All rights reserved.</span>
         </div>
     </footer>
   )
