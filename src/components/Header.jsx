@@ -16,18 +16,18 @@ const Header = () => {
           <span className="text-lg">Store</span>
         </h2></NavLink>
         <ul className="flex hidden md:flex gap-15  cursor-pointer md:text-xl  font-semibold">
-          <li className="hover:text-zinc-300 transition-all duration-300">
+         <NavLink to={'/'}> <li className="hover:text-zinc-300 transition-all duration-300">
             Home
-          </li>
-          <li className="hover:text-zinc-300 transition-all duration-300">
+          </li></NavLink>
+          <NavLink to={'/products'}><li className="hover:text-zinc-300 transition-all duration-300">
             Product
-          </li>
-          <li className="hover:text-zinc-300 transition-all duration-300">
+          </li></NavLink>
+         <NavLink to={'/about'}> <li className="hover:text-zinc-300 transition-all duration-300">
             About
-          </li>
-          <li className="hover:text-zinc-300 transition-all duration-300">
+          </li></NavLink>
+          <NavLink to={'/contact'}><li className="hover:text-zinc-300 transition-all duration-300">
             Contact
-          </li>
+          </li></NavLink>
         </ul>
         <div className="flex gap-5 text-2xl items-center">
           <FaCartShopping className="hidden md:block" />

@@ -12,8 +12,8 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-black/40 z-10 "></div>
         <div className="absolute w-90 mx-auto md:w-200 inset-0 flex flex-col items-center gap-8 md:px-15 px-5  text-white   font-semibold font-mono top-20  md:top-40 z-20">
-            <h1 className="text-2xl md:text-5xl text-center">Everything You Need, In One Place</h1>
-            <p className=" text-center text-sm md:text-xl">Discover high-quality products at competitive prices with a seamless and secure online shopping experience you can trust.</p>
+            <h1 className="text-2xl md:text-5xl text-center ">Everything You Need, In One Place</h1>
+            <p className=" text-center font-sans text-sm md:text-xl">Discover high-quality products at competitive prices with a seamless and secure online shopping experience you can trust.</p>
             <NavLink to={'/products'}><button className="bg-daraz-primary py-2 px-5 hover:scale-105   cursor-pointer rounded-xl border-transparent border-0">Shop Now</button></NavLink>
         </div>
       </div>
