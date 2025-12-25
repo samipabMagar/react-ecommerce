@@ -56,9 +56,9 @@ const SingleProduct = () => {
               <p className="tracking-tighter font-semibold">(4 customer reviews)</p>
             </div>
             <p
-              className={`md:text-[17px] font-sans md:mt-4 ${
+              className={`md:text-[17px] text-sm  text-gray-700 font-sans md:mt-4 ${
                 isExpanded
-                  ? "text-gray-700 text-sm  mt-5 text-justify"
+                  ? "   text-justify"
                   : "line-clamp-4 text-justify "
               }`}
             >

@@ -40,7 +40,7 @@ const Header = () => {
       </nav>
       {menuOpen && (
         
-             <ul className="flex px-5  w-full z-30 flex-col gap-4 bg-daraz-primary sticky top-15  text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
+             <ul className="flex px-5  w-full z-30 flex-col gap-4 bg-daraz-primary  top-15 fixed  text-white py-4 text-2xl pb-10  cursor-pointer md:text-lg  font-semibold">
           <NavLink to={'/'}><li onClick={handleClick} className="hover:text-zinc-300 transition-all duration-300">
             Home
           </li></NavLink>
