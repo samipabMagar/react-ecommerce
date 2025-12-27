@@ -13,7 +13,7 @@ const Product = (props) => {
           
         >
           <div className="md:h-50 h-40">
-            <img className="w-30 md:w-40" src={image} alt="" />
+            <img className="w-30 md:w-35" src={image} alt="" />
           </div>
           <div>
             <NavLink to={`/singleproduct/${id}`}>
