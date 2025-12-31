@@ -10,7 +10,7 @@ const TrustSection = () => {
   return (
     <>
       <div className="py-2 px-5 md:px-15">
-        <h2 className="text-daraz-primary text-xl md:text-2xl font-semibold text-center">
+        <h2 className="text-daraz-primary text-xl md:text-2xl md:my-10 font-semibold text-center">
           Why Choose Roka Store
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 m-5 md:my-8 ">

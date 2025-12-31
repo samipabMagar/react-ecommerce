@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home.jsx'
-import Product from './pages/Product.jsx'
+import Products from './pages/Products.jsx'
 import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import Errorpage from './pages/Errorpage.jsx'
@@ -16,7 +16,7 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
-        <Route path='/products' element={<Product/>}></Route>
+        <Route path='/products' element={<Products/>}></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
         <Route path='/singleproduct/:id' element={<SingleProduct/>}></Route>

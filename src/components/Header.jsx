@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => setMenuOpen(false)
   return (
     <>
-      <nav className="pt-3 pb-2 md:pt-5 px-5 flex justify-between items-center sticky top-0 z-30   text-zinc-100 md:px-15 bg-daraz-primary">
+      <nav className="pt-3 pb-1 md:pt-2 px-5 flex justify-between items-center sticky top-0 z-30   text-zinc-100 md:px-15 bg-daraz-primary">
         <NavLink to={'/'}><h2 className="font-devina   font-extrabold text-2xl md:text-3xl  leading-4">
           Roka <br />
           <span className="text-lg">Store</span>
