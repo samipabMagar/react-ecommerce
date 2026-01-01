@@ -15,12 +15,12 @@ const Sort = () => {
     <div className='flex justify-between gap-2'>
           <input
             type="text"
-            className="font-sans py-1 text-[12px] px-6 border border-gray-500 bg-white rounded-lg"
+            className="font-sans py-2 text-[12px] px-6 border border-gray-500 bg-white rounded-lg"
             placeholder="Search for products"
           />
 
           <div className="relative">
-            <button onClick={() => setOpen(!open)} className="text-[10px] flex items-center w-32  bg-white px-1 py-1 border rounded-lg">
+            <button onClick={() => setOpen(!open)} className="text-[10px] border-gray-500 flex justify-between items-center w-35  bg-white px-1 font-semibold  py-2 border rounded-lg">
               {selected} <MdArrowDropDown className='text-lg'/>
             </button>
 

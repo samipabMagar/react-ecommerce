@@ -9,11 +9,11 @@ const Product = (props) => {
     <>
       <div className="">
         <div
-          className="bg-white gap-9 cursor-pointer  flex rounded-2xl hover:scale-105 transition-all duration-300 flex-col items-center justify-center py-5 px-5 "
+          className="bg-white gap-8 cursor-pointer  flex rounded-2xl hover:scale-105 transition-all duration-300 flex-col items-center justify-center py-5 px-5 "
           
         >
-          <div className="md:h-50 h-40">
-            <img className="w-30 md:w-35" src={image} alt="" />
+          <div className="md:h-50 h-25">
+            <img className="w-20 md:w-35" src={image} alt="" />
           </div>
           <div>
             <NavLink to={`/singleproduct/${id}`}>
