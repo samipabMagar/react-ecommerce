@@ -9,15 +9,19 @@ const Product = (props) => {
     <>
       <div className="">
         <div
-          className="bg-white gap-8 cursor-pointer  flex rounded-2xl hover:scale-105 transition-all duration-300 flex-col items-center justify-center py-5 px-5 "
+          className="bg-white gap-2 cursor-pointer  flex rounded-2xl hover:scale-105 transition-all duration-300 flex-col items-center  py-5 px-5 "
           
         >
+          <h2 className="font-semibold text-[15px]">
+              {title.slice(0,10)}
+            </h2>
           <div className="md:h-50 h-25">
             <img className="w-20 md:w-35" src={image} alt="" />
           </div>
           <div>
+            
             <NavLink to={`/singleproduct/${id}`}>
-              <h4 className="text-blue-600 md:text-sm hover:text-blue-800  text-[10px] mb-2">
+              <h4 className="text-blue-600 md:text-sm hover:text-blue-800 mt-5  text-[10px] mb-2">
                 Details
               </h4>
             </NavLink>

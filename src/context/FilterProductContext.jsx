@@ -5,19 +5,24 @@ import { reducer } from "../reducer/FilterProductReducer";
 export const FilterProductContext = createContext();
 
 const initialState = {
-    filterProducts:[],
+    filter_products:[],
     all_products: [],
 }
 
 const FilterProductProvider = ({children} ) => {
     const [state, dispatch] = useReducer(reducer, initialState)
     const {products}=useProductContext();
+
+    const sortProducts=(sortValue) => {
+        
+        dispatch({type: "SORT_PRODUCTS", payload:sortValue})
+    }
     
     useEffect(() => {
         dispatch({type: "LOAD_PRODUCTS", payload:products})
     }, [products])
     return(
-        <FilterProductContext.Provider value={{...state }}> 
+        <FilterProductContext.Provider value={{...state, sortProducts }}> 
             {
                 children
             }

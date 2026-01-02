@@ -46,7 +46,7 @@ const Category = () => {
             );
           })}
         </div>
-        <div className="grid my-6 grid-cols-2 gap-3 md:grid-cols-2 xl:grid-cols-4 md:mt-10 mt-7">{
+        <div className="grid my-6 grid-cols-2 gap-3 md:gap-8 md:grid-cols-2 xl:grid-cols-4 md:mt-10 mt-7">{
           filteredProducts.slice(0,8).map((curElem) => {
             return <Product key={curElem.id} {...curElem}/>
           })
