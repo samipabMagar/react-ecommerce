@@ -12,11 +12,11 @@ const Product = (props) => {
           className="bg-white gap-2 cursor-pointer  flex rounded-2xl hover:scale-105 transition-all duration-300 flex-col items-center  py-5 px-5 "
           
         >
-          <h2 className="font-semibold text-[15px]">
+          <h2 className="font-semibold md:text-xl text-[15px]">
               {title.slice(0,10)}
             </h2>
-          <div className="md:h-50 h-25">
-            <img className="w-20 md:w-35" src={image} alt="" />
+          <div className="md:h-38 h-25">
+            <img className="w-20 md:w-28" src={image} alt="" />
           </div>
           <div>
             
