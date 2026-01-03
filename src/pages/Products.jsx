@@ -1,25 +1,24 @@
 import React from "react";
 import Sort from "../components/Sort";
-import Product from "../components/Product"
+import Product from "../components/Product";
 import { useFilterProductContext } from "../context/FilterProductContext";
 
 const Products = () => {
-  const {filter_products} = useFilterProductContext();
-  
+  const { filter_products } = useFilterProductContext();
+
   return (
     <>
       <div className="py-5 px-5">
-        <Sort/>
+        <Sort />
         <div className="grid my-6 grid-cols-2 gap-3 ">
-        {
-          filter_products.map((curElem, index) => {
-            return (
-              <Product key={index} {...curElem}/>
-            )
-          })
-        }
+          {filter_products.length == 0 ? (
+            <p className="font-sans font-semibold">No products available</p>
+          ) : (
+            filter_products.map((curElem, index) => {
+              return <Product key={index} {...curElem} />;
+            })
+          )}
         </div>
-      
       </div>
     </>
   );
